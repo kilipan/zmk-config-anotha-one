@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: LukaOber
+      url-base: https://github.com/LukaOber
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-anotha-one
+      remote: LukaOber
+      revision: main
+  self:
+    path: config
